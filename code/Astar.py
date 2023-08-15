@@ -34,7 +34,7 @@ class Node:
         self.f = math.inf
 
     def __lt__(self, other):
-        # Comparing nodes by f value
+        # Comparing nodes by f value when they are added to the priority queue
         return self.f < other.f
 
 
@@ -91,8 +91,8 @@ def get_neighbors(node, nodes, graph):
 # Defining a function to implement the A* algorithm
 def a_star(start, goal, nodes, graph):
     path = []
-    if goal == 1:
-        path.append(1)
+    if goal == start:
+        path.append(start)
         return path
     open_set = PriorityQueue()
     closed_set = set()
