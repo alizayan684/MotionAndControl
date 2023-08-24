@@ -25,5 +25,5 @@ The output file has the following format:
 
 - **path.csv**: A comma-separated file that contains information about the optimal path found by the algorithm. Each column represents a node in the path and has one column: `id`. The `id` column is the ID of each node in the path. The order of columns indicates the order of nodes in the path from start to goal.
 
-here is a screen shot of the simulation results:
-![Sim]()
+here is a screenshot of the simulation results:
+![Sim](https://github.com/alizayan684/MotionAndControl/blob/main/Screenshot%202023-08-15%20023655.png).
